@@ -1,0 +1,21 @@
+RewriteEngine On
+RewriteBase /lebonplan/
+
+# Page d'accueil et alias /accueil ou /offres pointent vers index.php
+RewriteRule ^accueil$ index.php [L]
+RewriteRule ^offres$ index.php [L]
+
+# Autres pages
+RewriteRule ^entreprises$ vue/entreprise/entreprise.php [L]
+RewriteRule ^connexion$ vue/inscription/login.php [L]
+RewriteRule ^postuler$ vue/inscription/login.php [L]
+RewriteRule ^inscription$ vue/inscription/inscription.php [L]
+RewriteRule ^form$ vue/form/form.php [L]
+RewriteRule ^mention$ vue/mention/mention.php [L]
+RewriteRule ^contact$ vue/contact/contact.php [L]
+RewriteRule ^wishlist$ vue/wishlist/wishlist.php [L]
+
+# Supprimer slash final
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ /$1 [R=301,L]

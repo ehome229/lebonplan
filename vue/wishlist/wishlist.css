@@ -1,0 +1,49 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 30px;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+.wishlist-form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.wishlist-form label {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.wishlist-form input {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.wishlist-form button {
+  padding: 12px;
+  background-color: orangered;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.wishlist-form button:hover {
+  background-color: rgb(49, 17, 6);
+}

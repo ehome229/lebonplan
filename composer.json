@@ -1,0 +1,15 @@
+{
+    "name": "user/lebonplan",
+    "description": "Ce site est pour les offres d'emploi. Seules les entreprises reconnues peuvent effectuer des annonces ici.",
+    "autoload": {
+        "psr-4": {
+            "User\\Lebonplan\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Nestor AMOUZOUN"
+        }
+    ],
+    "require": {}
+}
